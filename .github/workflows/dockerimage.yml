@@ -16,6 +16,6 @@ jobs:
     - name: Build the Docker image
       run: |
         docker build . --file Dockerfile --tag pgagent:12.1
-        docker tag kioskcms:latest iotmcr.azurecr.io/kioskcms/pgagent:12.1
+        docker tag pgagent:12.1 iotmcr.azurecr.io/kioskcms/pgagent:12.1
         docker login iotmcr.azurecr.io -u iotmcr -p xo9wR0MJBHgL=Ei8YZhKa1HH1mTQPPLR
         docker push iotmcr.azurecr.io/kioskcms/pgagent:12.1
