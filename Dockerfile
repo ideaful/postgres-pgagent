@@ -1,4 +1,4 @@
-FROM postgres:9.5.5
+FROM postgres:12.1
 
 ENV TIMEZONE America/Manaus
 
